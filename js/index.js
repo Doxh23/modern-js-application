@@ -6,9 +6,10 @@ import { searchbar, template } from "./script.js";
   var heroes = await fetch(`https://character-database.becode.xyz/characters`);
   let datas = await heroes.json();
   // Clone, use and fill of the template and
-
   template(datas);
   // Switch to the Single Character page
+  console.log("Last Update : " + localStorage.getItem("edit"))
+
   document
     .getElementById("index-new-btn")
     .addEventListener("click", function () {

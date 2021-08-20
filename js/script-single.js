@@ -1,4 +1,5 @@
 import "regenerator-runtime/runtime";
+import moment from 'moment';
 import { singlecharac } from "./script.js";
 (async () => {
   //fetch the API
@@ -26,6 +27,7 @@ import { singlecharac } from "./script.js";
           }
         );
         alert("votre personnage a bien été supprimé");
+        localStorage.setItem("edit",moment().format("MMMM Do YYYY, h:mm:ss a") )
         window.location.href = "index.html";
       } else {
         alert(`This character isn't delete of your API`);

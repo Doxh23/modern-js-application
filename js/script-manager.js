@@ -1,3 +1,4 @@
+import moment from 'moment';
 import "regenerator-runtime/runtime";
 import { idsingle } from "./script.js";
 
@@ -51,6 +52,7 @@ function imageUploaded() {
           }
         );
         alert(`Your character is added to the DB`);
+        localStorage.setItem("edit",moment().format("MMMM Do YYYY, h:mm:ss a") )
         window.location.href = "index.html";
       } else {
         alert(`This character isn't add to the DB`);
@@ -87,7 +89,8 @@ function imageUploaded() {
             }
           );
           alert("Your character has been modified in the DB");
-          window.location.href = "../pages/index.html";
+          localStorage.setItem("edit",moment().format("MMMM Do YYYY, h:mm:ss a") )
+          window.location.href = "index.html";
         } else {
           alert("your character hasn't been modify!");
         }
@@ -111,7 +114,8 @@ function imageUploaded() {
             }
           );
           alert("Your character has been modified in the DB");
-          window.location.href = "../pages/index.html";
+          localStorage.setItem("edit",moment().format("MMMM Do YYYY, h:mm:ss a") )
+          window.location.href = "index.html";
         } else {
           alert("your character hasn't been modify!");
         }
@@ -130,6 +134,7 @@ function imageUploaded() {
         }
       );
       alert("votre personnage a bien été supprimé");
+      localStorage.setItem("edit",moment().format("MMMM Do YYYY, h:mm:ss a") )
       window.location.href = "index.html";
     } else {
       alert(`This character isn't delete of your API`);
