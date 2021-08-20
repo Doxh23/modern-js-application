@@ -80,7 +80,7 @@ img {
   font-weight: 100;
   font-style: italic;
   font-size: 1rem;
-  opacity: 60%;
+  opacity: 0.60;
 }
 #single__text {
   display: flex;
@@ -90,7 +90,7 @@ img {
   color: white;
   font-size: 1.1rem;
   font-family: "Roboto", sans-serif;
-  opacity: 75%;
+  opacity: 0.75;
 }
 /*End of single Character CSS*/
 
