@@ -1,0 +1,32 @@
+{
+  "name": "modern-js-application",
+  "version": "1.0.0",
+  "description": "character-manager-js =======================",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rm -rf .cache dist && parcel build pages/index.html pages/manager-character.html pages/single-character.html --out-dir docs --public-url ./",
+    "dev": "parcel ./pages/*.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MrPinoBoy/modern-js-application.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MrPinoBoy/modern-js-application/issues"
+  },
+  "homepage": "https://github.com/MrPinoBoy/modern-js-application#readme",
+  "dependencies": {
+    "parcel": "^2.0.0-rc.0",
+    "regenerator-runtime": "^0.13.9"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "eslint": "^7.32.0",
+    "parcel-bundler": "^1.9.4",
+    "prettier": "2.3.2"
+  }
+}
